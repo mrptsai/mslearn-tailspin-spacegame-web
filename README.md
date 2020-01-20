@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/paulrtowler/Space%20Game%20-%20web%20-%20Pipeline/_apis/build/status/Space%20Game%20-%20web)](https://dev.azure.com/paulrtowler/Space%20Game%20-%20web%20-%20Pipeline/_build/latest?definitionId=1)
 
 # Contributing
 

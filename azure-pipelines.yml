@@ -38,6 +38,11 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
 
+- task: UseDotNet@2
+  displayName: 'Use .NET Core SDK 2.0.0'
+  inputs:
+    version: '2.0.0'
+
 - task: SonarCloudPrepare@1
   displayName: 'Prepare SonarCloud analysis'
   inputs:

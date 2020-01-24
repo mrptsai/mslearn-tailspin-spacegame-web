@@ -1,0 +1,26 @@
+SONAR_PROJECT_KEY=mrptsai_mslearn-tailspin-spacegame-web
+SONAR_ORGANIZATION=space-game-web-mrptsai
+SONAR_LOGIN=2197c89be6dae8811039b871f419fe7ce8b755c0
+
+sonar-scanner \
+  -Dsonar.projectKey=mrptsai_mslearn-tailspin-spacegame-web \
+  -Dsonar.organization=space-game-web-mrptsai \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=2197c89be6dae8811039b871f419fe7ce8b755c0
+
+  $HOME/.dotnet/tools/dotnet-sonarscanner begin \
+  /k:"$SONAR_PROJECT_KEY" \
+  /d:sonar.host.url="https://sonarcloud.io" \
+  /d:sonar.login="$SONAR_LOGIN" \
+  /d:sonar.cs.opencover.reportsPaths="./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.opencover.xml" \
+  /d:sonar.exclusions="**/wwwroot/lib/**/*" \
+  /o:"$SONAR_ORGANIZATION"
+
+
+  sonar-scanner.bat \
+  -D"sonar.projectKey=mrptsai_mslearn-tailspin-spacegame-web" \
+  -D"sonar.organization=space-game-web-mrptsai" \
+  -D"sonar.sources=." \
+  -D"sonar.host.url=https://sonarcloud.io" \
+  -D"sonar.login=1975345cf2e3b8eaa663840065c57e6c4ad6761a"
